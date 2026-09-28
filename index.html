@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="San Jose National High School official school information portal." />
+  <title>San Jose National High School | Puerto Princesa City</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Inter:wght@400;500;600;700&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="announcementModal" class="modal" aria-hidden="true">
+    <div class="modal-card">
+      <button class="modal-close" data-close-modal aria-label="Close">&times;</button>
+      <span class="eyebrow">SAN JOSE NATIONAL HIGH SCHOOL</span>
+      <h2>Welcome to SJNHS</h2>
+      <p>Explore school information, programs, student life, offices, organizations, publications, research, and helpful resources in one place.</p>
+      <button class="btn btn-primary" data-close-modal>Explore the Website</button>
+    </div>
+  </div>
+
+  <header class="site-header" id="top">
+    <div class="utility-bar">
+      <div class="container utility-inner">
+        <span>PUERTO PRINCESA CITY • PALAWAN</span>
+        <div class="utility-links">
+          <a href="#hotlines">Hotline Numbers</a>
+          <a href="#faq">FAQs</a>
+          <button id="editModeBtn" class="utility-edit">Edit Content</button>
+        </div>
+      </div>
+    </div>
+
+    <nav class="main-nav container">
+      <a class="brand" href="#home" aria-label="SJNHS Home">
+        <img src="assets/sjnsh-hero.jpeg" alt="SJNHS emblem" class="brand-logo" />
+        <span>
+          <strong>San Jose</strong>
+          <small>National High School</small>
+        </span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Open navigation">☰</button>
+
+      <div class="nav-menu" id="navMenu">
+        <a href="#about">About</a>
+        <a href="#academics">Academics</a>
+        <a href="#students">Students</a>
+        <a href="#organizations">Organizations</a>
+        <a href="#research">Research</a>
+        <a href="#resources">Resources</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <img src="assets/sjnsh-hero.jpeg" alt="San Jose National High School campus" class="hero-bg" data-image-slot="heroImage" />
+      <div class="hero-overlay"></div>
+      <div class="hero-content container">
+        <span class="eyebrow">THE HOME OF POTENTIAL LEARNERS</span>
+        <h1>San Jose<br><em>National High School</em></h1>
+        <p>Future leaders, driven by excellence and character.</p>
+        <div class="hero-actions">
+          <a class="btn btn-gold" href="#about">Discover SJNHS</a>
+          <a class="btn btn-outline" href="#resources">School Resources</a>
+        </div>
+      </div>
+      <div class="hero-caption">Puerto Princesa City, Palawan</div>
+    </section>
+
+    <section class="quick-links">
+      <div class="container quick-grid">
+        <a href="#enrollment"><span>01</span><b>Enrollment</b><small>Procedures & requirements</small></a>
+        <a href="#academics"><span>02</span><b>Academics</b><small>Programs & schedules</small></a>
+        <a href="#students"><span>03</span><b>Students</b><small>Handbook & student life</small></a>
+        <a href="#organizations"><span>04</span><b>Organizations</b><small>SSLG & registered orgs</small></a>
+        <a href="#research"><span>05</span><b>Research</b><small>Studies & publications</small></a>
+      </div>
+    </section>
+
+    <section id="about" class="section section-light">
+      <div class="container two-col">
+        <div>
+          <span class="eyebrow">ABOUT THE SCHOOL</span>
+          <h2>Building learners. Shaping leaders.</h2>
+          <p class="lead editable" data-key="background">
+            San Jose National High School is a public secondary school in Puerto Princesa City, Palawan.
+            Replace this paragraph with the school's official background, history, milestones, and institutional profile.
+          </p>
+          <div class="about-facts">
+            <div><strong>School</strong><span>San Jose National High School</span></div>
+            <div><strong>Location</strong><span>Puerto Princesa City, Palawan</span></div>
+            <div><strong>Mantra</strong><span>The home of potential learners, the future leaders, driven by excellence and character.</span></div>
+          </div>
+        </div>
+        <div class="image-frame">
+          <img src="assets/sjnsh-mantra.jpeg" alt="SJNHS mantra" data-image-slot="aboutImage" />
+          <div class="image-upload-control edit-only">
+            <label>Replace image <input type="file" accept="image/*" data-upload-for="aboutImage"></label>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section mantra-section">
+      <div class="container">
+        <div class="mantra-card">
+          <img src="assets/sjnsh-mantra.jpeg" alt="School mantra" data-image-slot="mantraImage" />
+          <div class="mantra-copy">
+            <span class="eyebrow">OUR MANTRA</span>
+            <h2 class="editable" data-key="mantra">“The home of potential learners, the future leaders, driven by excellence and character.”</h2>
+            <p>Use this section for the school's official mantra, institutional values, or a short message from the school administration.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="mission" class="section section-green">
+      <div class="container mission-grid">
+        <article>
+          <span class="number">01</span>
+          <span class="eyebrow">MISSION</span>
+          <h2 class="editable" data-key="missionTitle">Our Mission</h2>
+          <p class="editable" data-key="mission">Insert the official SJNHS mission statement here. Keep the wording exactly as approved by the school.</p>
+        </article>
+        <article>
+          <span class="number">02</span>
+          <span class="eyebrow">VISION</span>
+          <h2 class="editable" data-key="visionTitle">Our Vision</h2>
+          <p class="editable" data-key="vision">Insert the official SJNHS vision statement here. Keep the wording exactly as approved by the school.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="enrollment" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <div><span class="eyebrow">ADMISSIONS</span><h2>Enrollment Procedures</h2></div>
+          <p>Provide official enrollment instructions, schedules, requirements, and contact details here.</p>
+        </div>
+        <div class="steps-grid">
+          <article class="step-card"><span>01</span><h3>Prepare Requirements</h3><p class="editable" data-key="enroll1">List the official documents and forms required for the learner's enrollment.</p></article>
+          <article class="step-card"><span>02</span><h3>Submit / Register</h3><p class="editable" data-key="enroll2">Insert the official registration or submission procedure, including where and when to submit.</p></article>
+          <article class="step-card"><span>03</span><h3>Verification</h3><p class="editable" data-key="enroll3">Insert the school's verification, screening, or validation process if applicable.</p></article>
+          <article class="step-card"><span>04</span><h3>Confirmation</h3><p class="editable" data-key="enroll4">Insert the official confirmation, sectioning, schedule release, or next-step instructions.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="academics" class="section section-light">
+      <div class="container">
+        <div class="section-heading">
+          <div><span class="eyebrow">ACADEMIC</span><h2>Programs & Learning</h2></div>
+          <p>Academic offerings, schedules, policies, and learning resources.</p>
+        </div>
+
+        <div class="program-grid">
+          <article class="program-card featured">
+            <span class="tag">JUNIOR HIGH SCHOOL</span>
+            <h3>Academic Programs</h3>
+            <p>Use this card for the school's junior high school programs, learning areas, special programs, and academic initiatives.</p>
+            <a href="#programs" class="text-link">View programs →</a>
+          </article>
+          <article class="program-card">
+            <span class="tag">SPECIAL PROGRAM</span>
+            <h3>SSC</h3>
+            <p>Insert the official description, eligibility, application details, and contact person.</p>
+          </article>
+          <article class="program-card">
+            <span class="tag">SPECIAL PROGRAM</span>
+            <h3>SPJ</h3>
+            <p>Insert the official Special Program in Journalism information and application details.</p>
+          </article>
+          <article class="program-card">
+            <span class="tag">SENIOR HIGH SCHOOL</span>
+            <h3>STEM</h3>
+            <p>Science, Technology, Engineering and Mathematics — replace with the school's official strand description.</p>
+          </article>
+          <article class="program-card">
+            <span class="tag">SENIOR HIGH SCHOOL</span>
+            <h3>ASSH</h3>
+            <p>Insert the official strand/program description and requirements.</p>
+          </article>
+          <article class="program-card">
+            <span class="tag">SENIOR HIGH SCHOOL</span>
+            <h3>TECHPRO</h3>
+            <p>Insert the official technical-professional program information.</p>
+          </article>
+          <article class="program-card">
+            <span class="tag">SENIOR HIGH SCHOOL</span>
+            <h3>B&amp;E</h3>
+            <p>Insert the official business and entrepreneurship program information.</p>
+          </article>
+        </div>
+
+        <div class="resource-strip">
+          <a href="#schedule"><b>Schedule of Classes</b><span>View or upload schedules →</span></a>
+          <a href="#policy"><b>School Policy</b><span>Policies & procedures →</span></a>
+          <a href="#dress"><b>Dress Code</b><span>Official dress guidelines →</span></a>
+          <a href="#prohibited"><b>Prohibited Items</b><span>Student safety information →</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section id="programs" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <div><span class="eyebrow">SCHOOL PROGRAMS</span><h2>Programs in Action</h2></div>
+          <p>Replace the cards below with current programs, initiatives, projects, and major school activities.</p>
+        </div>
+        <div class="story-grid">
+          <article class="story-card">
+            <div class="photo-placeholder"><img src="assets/sjnsh-hero.jpeg" alt="Program placeholder" data-image-slot="program1"></div>
+            <div><span class="tag">PROGRAM</span><h3>Learning Recovery</h3><p>Insert program details, dates, outcomes, and related photos.</p></div>
+            <div class="image-upload-control edit-only"><label>Upload <input type="file" accept="image/*" data-upload-for="program1"></label></div>
+          </article>
+          <article class="story-card">
+            <div class="photo-placeholder"><img src="assets/sjnsh-mantra.jpeg" alt="Program placeholder" data-image-slot="program2"></div>
+            <div><span class="tag">COMMUNITY</span><h3>Community Engagement</h3><p>Insert outreach, volunteerism, environmental, or civic initiatives.</p></div>
+            <div class="image-upload-control edit-only"><label>Upload <input type="file" accept="image/*" data-upload-for="program2"></label></div>
+          </article>
+          <article class="story-card">
+            <div class="photo-placeholder"><img src="assets/sjnsh-hero.jpeg" alt="Program placeholder" data-image-slot="program3"></div>
+            <div><span class="tag">STUDENT DEVELOPMENT</span><h3>Leadership & Formation</h3><p>Insert leadership, character formation, student development, and wellness programs.</p></div>
+            <div class="image-upload-control edit-only"><label>Upload <input type="file" accept="image/*" data-upload-for="program3"></label></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="students" class="section section-dark">
+      <div class="container">
+        <div class="section-heading light">
+          <div><span class="eyebrow">CAMPUS LIFE</span><h2>Students at SJNHS</h2></div>
+          <p>Showcase student activities, programs offered, organizations, achievements, and campus culture.</p>
+        </div>
+        <div class="campus-grid">
+          <div class="campus-main"><img src="assets/sjnsh-hero.jpeg" alt="Campus life" data-image-slot="campusMain"></div>
+          <div class="campus-copy">
+            <span class="eyebrow">STUDENT LIFE</span>
+            <h3>A campus where voices become leadership.</h3>
+            <p class="editable" data-key="campusLife">Replace this text with an official overview of campus life, student activities, academic competitions, performing arts, journalism, sports, and other learner experiences.</p>
+            <a href="#organizations" class="btn btn-gold">Explore Organizations</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="administration" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <div><span class="eyebrow">SJNHS</span><h2>School Directory</h2></div>
+          <p>A structured directory inspired by institutional school/university websites. Replace placeholders with verified names, titles, photos, emails, and office schedules.</p>
+        </div>
+        <div class="directory-grid">
+          <article><b>TEACHERS ORGANIZATIONAL CHART</b><span>Faculty and teaching personnel</span><a href="#">Open directory →</a></article>
+          <article><b>TEA</b><span>Insert office/organization details</span><a href="#">View →</a></article>
+          <article><b>PTA</b><span>Parents and Teachers Association</span><a href="#">View →</a></article>
+          <article><b>GUIDANCE COUNSELOR</b><span>Guidance and student support</span><a href="#">View →</a></article>
+          <article><b>SCHOOL ADMINISTRATION OFFICES</b><span>BAC • Finance • Records • LRPO</span><a href="#">View offices →</a></article>
+          <article><b>PREFECT</b><span>Student discipline and formation</span><a href="#">View →</a></article>
+          <article><b>AWARDS &amp; RECOGNITION</b><span>School and learner achievements</span><a href="#awards">View awards →</a></article>
+          <article><b>ALUMNI</b><span>Former students and alumni stories</span><a href="#alumni">Visit alumni →</a></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="organizations" class="section section-light">
+      <div class="container">
+        <div class="section-heading">
+          <div><span class="eyebrow">STUDENT ORGANIZATIONS</span><h2>Student Voices & Organizations</h2></div>
+          <p>Use this space as a searchable directory of officially registered student organizations.</p>
+        </div>
+        <div class="org-grid">
+          <article class="org-card"><span>01</span><h3>SSLG</h3><p>Supreme Secondary Learner Government</p></article>
+          <article class="org-card"><span>02</span><h3>ALL REGISTERED ORGS</h3><p>Insert the complete, officially recognized organization directory.</p></article>
+          <article class="org-card"><span>03</span><h3>PUBLICATIONS</h3><p>School publications, editorial teams, and media platforms.</p></article>
+          <article class="org-card"><span>04</span><h3>ANLUWAGE</h3><p>Insert official publication information, staff, and archive.</p></article>
+          <article class="org-card"><span>05</span><h3>TNL</h3><p>The New Leaf — insert official publication/radio information.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="awards" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <div><span class="eyebrow">EXCELLENCE</span><h2>Awards & Recognition</h2></div>
+          <p>Highlight institutional, faculty, organization, and student achievements.</p>
+        </div>
+        <div class="timeline">
+          <article><span>2026</span><div><h3>School Achievement</h3><p>Add verified award details, awarding body, category, and date.</p></div></article>
+          <article><span>2025</span><div><h3>Student & Organization Achievement</h3><p>Add verified achievement details and supporting photos.</p></div></article>
+          <article><span>Archive</span><div><h3>Past Recognitions</h3><p>Build a searchable archive of previous awards and recognitions.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="policy" class="section section-green">
+      <div class="container policy-grid">
+        <article id="dress"><span class="eyebrow">STUDENT GUIDE</span><h2>Dress Code</h2><p>Insert the official SJNHS dress code and uniform guidelines here.</p></article>
+        <article id="schedule"><span class="eyebrow">STUDENT GUIDE</span><h2>Schedule of Classes</h2><p>Insert current class schedules, links, downloadable files, or section schedules.</p></article>
+        <article id="prohibited"><span class="eyebrow">STUDENT GUIDE</span><h2>Prohibited Items</h2><p>Insert the school's official student safety and prohibited-items policy.</p></article>
+        <article><span class="eyebrow">STUDENT GUIDE</span><h2>School Policy</h2><p>Insert approved school policies, procedures, and student responsibilities.</p></article>
+      </div>
+    </section>
+
+    <section id="research" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <div><span class="eyebrow">RESEARCH</span><h2>Research & Knowledge</h2></div>
+          <p>Build a digital research archive for SJNHS learners and faculty.</p>
+        </div>
+        <div class="research-grid">
+          <article class="research-card"><span class="tag">ARCHIVE</span><h3>Past Research Papers</h3><p>Upload or link approved research papers, capstones, and school studies.</p><button class="btn btn-small">Browse archive</button></article>
+          <article class="research-card"><span class="tag">STUDENT RESEARCH</span><h3>Research Repository</h3><p>Organize studies by strand, school year, subject, research design, or theme.</p><button class="btn btn-small">View repository</button></article>
+          <article class="research-card"><span class="tag">GUIDE</span><h3>Research Resources</h3><p>Add research manuals, templates, ethics guidance, forms, and references.</p><button class="btn btn-small">Open resources</button></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="alumni" class="section section-light">
+      <div class="container two-col">
+        <div>
+          <span class="eyebrow">ALUMNI</span>
+          <h2>Once a Josean, always part of the story.</h2>
+          <p>Use this section for alumni profiles, notable alumni, reunion announcements, alumni services, and contributions to the school community.</p>
+          <button class="btn btn-primary">Alumni Directory</button>
+        </div>
+        <div class="alumni-panel">
+          <div><strong>ALUMNI STORIES</strong><span>Add profile →</span></div>
+          <div><strong>REUNIONS</strong><span>Add announcement →</span></div>
+          <div><strong>ALUMNI SUPPORT</strong><span>Add information →</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="section">
+      <div class="container narrow">
+        <div class="section-heading center">
+          <span class="eyebrow">HELP CENTER</span>
+          <h2>Frequently Asked Questions</h2>
+          <p>Click a question to expand the answer.</p>
+        </div>
+        <div class="faq-list">
+          <details><summary>Where is San Jose National High School located?</summary><p>Insert the school's official address and directions here.</p></details>
+          <details><summary>How can I enroll?</summary><p>See the Enrollment Procedures section and replace this answer with official instructions.</p></details>
+          <details><summary>What programs and strands are offered?</summary><p>Insert the current official academic and senior high school offerings.</p></details>
+          <details><summary>How can I contact a school office?</summary><p>Use the hotline and office directory below.</p></details>
+          <details><summary>Where can I find school policies and schedules?</summary><p>Use the Student Guide section for current documents and links.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <section id="search" class="section search-section">
+      <div class="container">
+        <div class="search-box">
+          <span class="eyebrow">SEARCH SJNHS</span>
+          <h2>Find information quickly.</h2>
+          <p>Search the website by office, program, organization, resource, or topic.</p>
+          <div class="search-input-wrap">
+            <input id="siteSearch" type="search" placeholder="Try “STEM”, “PTA”, “research”, “enrollment”..." autocomplete="off" />
+            <button id="clearSearch" aria-label="Clear search">×</button>
+          </div>
+          <div id="searchResults" class="search-results"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="hotlines" class="section section-dark">
+      <div class="container">
+        <div class="section-heading light">
+          <div><span class="eyebrow">CONTACT</span><h2>Hotline Numbers</h2></div>
+          <p>Replace every placeholder with an officially verified school contact number.</p>
+        </div>
+        <div class="hotline-grid">
+          <article><span>01</span><b>School Administration</b><strong class="editable" data-key="adminPhone">[Insert official number]</strong></article>
+          <article><span>02</span><b>Guidance Office</b><strong class="editable" data-key="guidancePhone">[Insert official number]</strong></article>
+          <article><span>03</span><b>Records / Registrar</b><strong class="editable" data-key="recordsPhone">[Insert official number]</strong></article>
+          <article><span>04</span><b>Emergency / School Safety</b><strong class="editable" data-key="emergencyPhone">[Insert official number]</strong></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container contact-grid">
+        <div>
+          <span class="eyebrow">ABOUT THE CREATORS</span>
+          <h2>Built for the SJNHS community.</h2>
+          <p class="editable" data-key="creators">Insert the creators' names, roles, school year, development team, acknowledgments, and contact information here.</p>
+        </div>
+        <div class="creator-card">
+          <div class="creator-avatar">SJNHS</div>
+          <div><b>Website Development Team</b><span>San Jose National High School</span><small>Replace with official creator information</small></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-main">
+      <div class="footer-brand">
+        <img src="assets/sjnsh-hero.jpeg" alt="SJNHS" />
+        <div><strong>San Jose National High School</strong><span>The home of potential learners, the future leaders, driven by excellence and character.</span></div>
+      </div>
+      <div class="footer-links">
+        <a href="#about">About</a><a href="#academics">Academics</a><a href="#students">Students</a><a href="#research">Research</a><a href="#hotlines">Contact</a>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span id="year"></span> San Jose National High School. For official school information, verify details with the school administration.</span>
+      <a href="#top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <div id="editPanel" class="edit-panel" aria-hidden="true">
+    <div class="edit-panel-inner">
+      <div>
+        <b>Website Edit Mode</b>
+        <span>Text changes and uploaded images are saved in this browser using local storage.</span>
+      </div>
+      <button id="resetSite" class="btn btn-small danger">Reset Local Changes</button>
+      <button id="closeEdit" class="modal-close">×</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
