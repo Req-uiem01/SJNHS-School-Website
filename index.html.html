@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Lola Marvie’s 82nd Birthday · You’re Invited</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,500;0,600;1,400&family=Pinyon+Script&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#14061b;--deep:#240a30;--plum:#2f0d3d;--lilac:#e4d3f0;--gold:#e2c48a;--gold2:#f7e8bf;--dgold:#8a6320;--cream:#fbf5ec;--para:#f8f0e4;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:radial-gradient(ellipse at 50% 0,#4a1a5f 0,var(--deep) 40%,var(--ink) 100%) fixed;color:var(--cream);font-family:'Cormorant Garamond',Georgia,serif;font-size:21px;font-weight:500;line-height:1.55;overflow-x:hidden}
+body::after{content:"";position:fixed;inset:10px;border:1px solid rgba(226,196,138,.4);pointer-events:none;z-index:5}
+h1,h2,h3,p{margin:0}
+.script{font-family:'Pinyon Script','Snell Roundhand',cursive;font-weight:400}
+.gold{background:linear-gradient(100deg,#d9b46c,var(--gold2) 35%,#d9b46c 60%,var(--gold2));background-size:220% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:shine 8s linear infinite}
+@keyframes shine{to{background-position:-220% 0}}
+.cap{letter-spacing:.28em;text-transform:uppercase;font-size:.82rem;color:var(--gold);font-weight:600}
+.orn{display:flex;align-items:center;gap:16px;justify-content:center;color:var(--gold);margin:26px auto;max-width:360px;font-size:.8rem}
+.orn::before,.orn::after{content:"";flex:1;height:1px;background:linear-gradient(90deg,transparent,var(--gold))}
+.orn::after{transform:scaleX(-1)}
+#gate{position:fixed;inset:0;z-index:50;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:30px;background:radial-gradient(circle at 50% 40%,#4b1a60,var(--ink));transition:opacity 1s,transform 1.2s}
+#gate.open{opacity:0;transform:scale(1.12);pointer-events:none}
+.seal{width:120px;height:120px;border-radius:50%;border:0;cursor:pointer;margin:34px 0 22px;background:radial-gradient(circle at 35% 30%,#8a4fb0,#3b1148 70%);box-shadow:0 0 0 2px var(--gold),0 0 0 8px rgba(226,196,138,.15),0 20px 50px rgba(0,0,0,.6);color:var(--gold2);font:400 2.6rem 'Pinyon Script',cursive;animation:pulse 2.8s ease-in-out infinite}
+@keyframes pulse{50%{box-shadow:0 0 0 2px var(--gold),0 0 0 22px rgba(226,196,138,0),0 20px 50px rgba(0,0,0,.6)}}
+#gate .script{font-size:clamp(2.6rem,11vw,4.2rem);line-height:1.1}
+main{max-width:720px;margin:0 auto;padding:0 24px 70px}
+section{padding:64px 0 4px;opacity:0;transform:translateY(24px);transition:opacity 1s,transform 1s}
+section.in{opacity:1;transform:none}
+.hero{text-align:center;min-height:94vh;display:flex;flex-direction:column;justify-content:center;align-items:center;padding-top:70px}
+.hero .script{font-size:clamp(4.2rem,18vw,7.8rem);line-height:.95;margin-top:18px}
+.age{font-size:clamp(5rem,24vw,9.5rem);font-weight:500;line-height:1;margin:2px 0 6px}
+.age sup{font-size:.26em;font-style:italic;font-weight:500}
+.lede{font-style:italic;font-size:1.45rem;max-width:26ch;color:#fff;font-weight:500}
+.count{display:flex;gap:26px;justify-content:center;margin-top:34px}
+.count div{text-align:center}
+.count b{display:block;font-size:2.4rem;font-weight:600;color:var(--gold2);line-height:1}
+.count span{font-size:.72rem;letter-spacing:.24em;text-transform:uppercase;color:var(--lilac);font-weight:600}
+h2{font-size:clamp(2.8rem,11vw,3.9rem);text-align:center;line-height:1.1;margin:8px 0 26px}
+.sub{text-align:center;color:#fff;font-style:italic;font-size:1.2rem;max-width:32ch;margin:-12px auto 28px}
+/* parchment panels */
+.frame{border:1px solid var(--gold);padding:6px;border-radius:4px;box-shadow:0 20px 50px rgba(0,0,0,.4)}
+.frame>div{border:1px solid rgba(138,99,32,.55);padding:34px 24px;background:linear-gradient(170deg,#fffaf2,var(--para) 60%,#efe3d2);color:var(--plum)}
+.frame .cap{color:var(--dgold)}
+.frame .gold{background:none;-webkit-text-fill-color:#4a1560;color:#4a1560;animation:none}
+.det{display:grid;grid-template-columns:1fr 1px 1fr;gap:20px;text-align:center;align-items:center}
+.det .vr,.mcs .vr{background:rgba(138,99,32,.5);align-self:stretch}
+.det .full{grid-column:1/-1;padding-top:22px;border-top:1px solid rgba(138,99,32,.4)}
+.det p{font-size:1.75rem;color:var(--plum);margin-top:6px;line-height:1.2;font-weight:600}
+.det small{display:block;font-size:1.1rem;color:#5b3a70;font-style:italic;margin-top:3px}
+.btns{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:30px}
+.btn{display:inline-block;padding:14px 26px;text-decoration:none;font:700 .85rem 'Cormorant Garamond',serif;letter-spacing:.2em;text-transform:uppercase;color:var(--ink);background:linear-gradient(120deg,#c79a52,var(--gold2),#c79a52);border:0;cursor:pointer;transition:transform .3s,box-shadow .3s}
+.btn:hover{transform:translateY(-3px);box-shadow:0 12px 28px rgba(226,196,138,.35)}
+.btn.ghost{background:transparent;color:var(--plum);border:1px solid var(--dgold)}
+.mcs{display:grid;grid-template-columns:1fr 1px 1fr;gap:20px;text-align:center;align-items:center}
+.mcs .script{font-size:2.3rem;line-height:1.15;display:block}
+.mcs .cap{display:block;margin-bottom:8px;font-size:.72rem}
+.sw{display:flex;justify-content:center;gap:12px;margin-bottom:10px}
+.sw i{width:50px;height:50px;border-radius:50%;border:1px solid var(--gold);box-shadow:0 6px 16px rgba(0,0,0,.4)}
+.opts{text-align:center;margin:0 0 24px;line-height:2;color:var(--gold2);font-size:.95rem}
+.gifts{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:1px;background:var(--gold);border:1px solid var(--gold)}
+.gift{background:linear-gradient(170deg,#fffaf2,var(--para));padding:26px 20px;text-align:center;color:var(--plum)}
+.gift b{display:block;color:var(--dgold);font-weight:700;font-size:.9rem;letter-spacing:.3em;margin-bottom:6px}
+.gift h3{font-size:1.55rem;font-weight:700;color:var(--plum);margin-bottom:6px}
+.gift p{font-size:1.1rem;color:#43294f;line-height:1.45}
+.rem{list-style:none;margin:0;padding:0}
+.rem li{display:flex;gap:18px;padding:16px 0;border-bottom:1px solid rgba(138,99,32,.35);font-size:1.15rem;line-height:1.45;color:#3a2146}
+.rem li:last-child{border:0}
+.rem span{flex:none;color:var(--dgold);font-style:italic;font-size:1.5rem;width:28px;line-height:1.1;font-weight:700}
+.rem b{color:var(--plum);font-weight:700}
+.field{display:block;margin-bottom:20px}
+.field>span{display:block;font-size:.78rem;letter-spacing:.2em;text-transform:uppercase;color:var(--dgold);margin-bottom:8px;font-weight:700}
+input[type=text],select{width:100%;background:#fff;border:1px solid var(--dgold);color:var(--plum);padding:13px 14px;font:inherit;font-weight:600;border-radius:2px}
+input:focus,select:focus{outline:2px solid var(--plum);outline-offset:1px}
+.choice{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.choice label{cursor:pointer}
+.choice input{position:absolute;opacity:0}
+.choice em{display:block;text-align:center;font-style:normal;padding:13px 8px;border:1px solid var(--dgold);font-size:1.08rem;color:var(--plum);font-weight:600;transition:.25s}
+.choice input:checked+em{background:var(--plum);color:var(--gold2);border-color:var(--plum)}
+.choice input:focus-visible+em{outline:2px solid var(--plum);outline-offset:2px}
+#msg{text-align:center;font-style:italic;color:var(--plum);font-weight:600;min-height:1.6em;margin-top:16px}
+.tally{display:flex;justify-content:center;gap:44px;margin:36px 0 8px;text-align:center}
+.tally b{display:block;font-size:2.6rem;font-weight:600;color:var(--gold2);line-height:1}
+.tally span{font-size:.72rem;letter-spacing:.26em;text-transform:uppercase;color:var(--lilac);font-weight:600}
+.list{list-style:none;margin:10px 0 0;padding:0}
+.list li{display:flex;justify-content:space-between;gap:12px;padding:12px 0;border-bottom:1px solid rgba(226,196,138,.3);font-size:1.18rem;color:#fff}
+.list .y{color:var(--gold2);font-weight:600}.list .n{color:var(--lilac);font-style:italic}
+.list button{background:none;border:0;color:var(--lilac);cursor:pointer;font:inherit;font-size:.9rem;margin-left:8px;text-decoration:underline}
+.empty{text-align:center;font-style:italic;color:var(--lilac);margin-top:16px}
+.close{text-align:center;padding:80px 0 10px}
+.close .script{font-size:clamp(2.8rem,11vw,4.2rem);line-height:1.15}
+.close p{color:#fff;font-style:italic;margin-top:10px;font-size:1.2rem}
+@media(max-width:520px){.mcs .script{font-size:1.8rem}.count{gap:18px}.det p{font-size:1.5rem}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}section{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+
+<div id="gate">
+  <div class="cap">You are cordially invited</div>
+  <button class="seal" id="openBtn" aria-label="Open invitation">LM</button>
+  <div class="script gold">Lola Marvie</div>
+  <p style="color:var(--lilac);font-style:italic;margin-top:10px">Touch the seal to open</p>
+</div>
+
+<main>
+  <section class="hero in">
+    <div class="cap">A celebration of a beautiful life</div>
+    <h1 class="script gold">Lola Marvie</h1>
+    <div class="age gold">82<sup>nd</sup></div>
+    <div class="cap" style="font-size:.9rem">Birthday Celebration</div>
+    <div class="orn">◆</div>
+    <p class="lede">Join us as we celebrate 82 wonderful years of love, life, and cherished memories.</p>
+    <div class="count" id="count"></div>
+  </section>
+
+  <section>
+    <div class="cap" style="text-align:center">The Details</div>
+    <h2 class="script gold">Save the Date</h2>
+    <div class="frame"><div>
+      <div class="det">
+        <div><div class="cap">Date</div><p>December 6, 2026</p><small>Sunday</small></div>
+        <div class="vr"></div>
+        <div><div class="cap">Time</div><p>5:00 PM</p><small>Evening</small></div>
+        <div class="full"><div class="cap">Venue</div><p>Trining’s Private Resort</p><small>Brgy. San Manuel</small></div>
+      </div>
+      <div class="btns">
+        <a class="btn" target="_blank" rel="noopener" href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Lola+Marvie%27s+82nd+Birthday+Celebration&dates=20261206T170000/20261206T220000&ctz=Asia/Manila&location=Trining%27s+Private+Resort%2C+Brgy.+San+Manuel&details=Dress+code%3A+A+Touch+of+Purple">Add to Calendar</a>
+        <a class="btn ghost" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Trining%27s+Private+Resort+Brgy.+San+Manuel">View Map</a>
+      </div>
+    </div></div>
+  </section>
+
+  <section>
+    <div class="cap" style="text-align:center">Your Hosts for the Evening</div>
+    <h2 class="script gold">Masters of Ceremonies</h2>
+    <div class="frame"><div>
+      <div class="mcs">
+        <div><span class="cap">Master of Ceremonies</span><span class="script gold">Kathleen Joyce Timosa</span></div>
+        <div class="vr"></div>
+        <div><span class="cap">Master of Ceremonies</span><span class="script gold">Alicia Erica Bomediano</span></div>
+      </div>
+    </div></div>
+  </section>
+
+  <section>
+    <div class="cap" style="text-align:center">Attire</div>
+    <h2 class="script gold">A Touch of Purple</h2>
+    <p class="sub">Guests are requested to wear any shade of purple to complement the celebration.</p>
+    <p class="cap opts">Casual &nbsp;◆&nbsp; Formal &nbsp;◆&nbsp; Your Choice of Purple</p>
+    <div class="sw" aria-hidden="true"><i style="background:#e6d6f2"></i><i style="background:#b58bd6"></i><i style="background:#7b4a9c"></i><i style="background:#5a2378"></i><i style="background:#2a0b36"></i></div>
+    
+  </section>
+
+  <section>
+    <div class="cap" style="text-align:center">A Little Gesture, A Lot of Love</div>
+    <h2 class="script gold">Gift Guide</h2>
+    <p class="sub">Bring a thoughtful gift Lola Marvie would genuinely appreciate. Your presence and heartfelt wishes are already a wonderful gift.</p>
+    <div class="gifts">
+      <div class="gift"><b>I</b><h3>Daily Essentials</h3><p>Adult diapers in size Medium and other everyday necessities.</p></div>
+      <div class="gift"><b>II</b><h3>Anything Purple</h3><p>Any purple item, from blooms to keepsakes, to match the theme.</p></div>
+      <div class="gift"><b>III</b><h3>Jewelry</h3><p>A ring, necklace, bracelet or earrings, perhaps with an amethyst touch.</p></div>
+      <div class="gift"><b>IV</b><h3>From the Heart</h3><p>A handwritten letter or a framed family photo.</p></div>
+      <div class="gift"><b>V</b><h3>Something She’d Love</h3><p>Anything Lola would appreciate: a soft shawl, her favorite treats or a heartfelt keepsake.</p></div>
+      <div class="gift"><b>VI</b><h3>Gift Envelope</h3><p>A monetary gift in a card, always graciously received.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="cap" style="text-align:center">Good to Know</div>
+    <h2 class="script gold">Reminders</h2>
+    <div class="frame"><div>
+      <ul class="rem">
+        <li><span>i</span><div><b>Arrive early.</b> We begin at 5:00 PM, so please come a little early.</div></li>
+        <li><span>ii</span><div><b>Wear purple.</b> Any shade, any style.</div></li>
+        <li><span>iii</span><div><b>Plan your travel.</b> Check the map and leave early for Brgy. San Manuel.</div></li>
+        <li><span>iv</span><div><b>Be thoughtful of our elders.</b> Please assist them and offer the best seats.</div></li>
+        <li><span>v</span><div><b>Confirm your attendance.</b> Kindly let us know below if you will come.</div></li>
+      </ul>
+    </div></div>
+  </section>
+
+  <section id="rsvp">
+    <div class="cap" style="text-align:center">Kindly Reply</div>
+    <h2 class="script gold">Will You Join Us?</h2>
+    <div class="frame"><div>
+      <label class="field"><span>Your Name</span><input type="text" id="name" maxlength="60" autocomplete="name" placeholder="Full name"></label>
+      <div class="field"><span>Your Reply</span>
+        <div class="choice">
+          <label><input type="radio" name="st" value="yes" checked><em>Joyfully Accept</em></label>
+          <label><input type="radio" name="st" value="no"><em>Regretfully Decline</em></label>
+        </div>
+      </div>
+      <label class="field" id="gwrap"><span>Number of Guests (including you)</span>
+        <select id="guests"><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option></select>
+      </label>
+      <div class="btns" style="margin-top:6px"><button class="btn" id="send" type="button">Send Reply</button></div>
+      <div id="msg" role="status"></div>
+    </div></div>
+    <div id="board" hidden>
+      <div class="tally"><div><b id="tY">0</b><span>Attending</span></div><div><b id="tN">0</b><span>Regrets</span></div></div>
+      <ul class="list" id="list"></ul>
+    </div>
+  </section>
+
+  <section class="close">
+    <div class="orn">◆</div>
+    <div class="script gold">With love &amp; gratitude</div>
+    <p>We can’t wait to celebrate 82 beautiful years with you.</p>
+  </section>
+</main>
+
+<script>
+(function(){
+  var $=function(i){return document.getElementById(i)};
+  $('openBtn').addEventListener('click',function(){var g=$('gate');g.classList.add('open');setTimeout(function(){g.style.display='none'},1200);window.scrollTo(0,0)});
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.1});
+  document.querySelectorAll('section').forEach(function(s){io.observe(s)});
+
+  var target=new Date('2026-12-06T17:00:00+08:00').getTime(),box=$('count');
+  function tick(){var d=target-Date.now();
+    if(d<=0){box.innerHTML='<p class="script gold" style="font-size:2.4rem">Happy Birthday, Lola!</p>';return}
+    var v=[Math.floor(d/864e5),Math.floor(d%864e5/36e5),Math.floor(d%36e5/6e4),Math.floor(d%6e4/1e3)],l=['Days','Hours','Mins','Secs'];
+    box.innerHTML=v.map(function(n,i){return '<div><b>'+String(n).padStart(2,'0')+'</b><span>'+l[i]+'</span></div>'}).join('')}
+  tick();setInterval(tick,1000);
+
+  // RSVP
+  var db=null,uid=null,owner=false,col=null;
+  function status(){return document.querySelector('input[name=st]:checked').value}
+  function sync(){$('gwrap').style.display=status()==='yes'?'':'none'}
+  document.querySelectorAll('input[name=st]').forEach(function(r){r.addEventListener('change',sync)});sync();
+  function say(t){$('msg').textContent=t}
+
+  function render(snap){
+    var rows=snap.docs.map(function(d){var x=d.data()||{};x._id=d.id;return x}).sort(function(a,b){return (a.at||0)-(b.at||0)});
+    var y=0,n=0,ul=$('list');ul.textContent='';
+    rows.forEach(function(r){
+      var li=document.createElement('li'),a=document.createElement('span'),b=document.createElement('span');
+      var yes=r.status==='yes';
+      a.textContent=String(r.name||'Guest')+(r._id===uid?' (you)':'');
+      b.className=yes?'y':'n';
+      b.textContent=yes?('Attending'+(r.guests>1?' · '+r.guests:'')):'Regrets';
+      if(yes)y+=Number(r.guests)||1;else n++;
+      if(owner){var x=document.createElement('button');x.textContent='remove';x.onclick=function(){col.doc(r._id).delete()};b.appendChild(x)}
+      li.appendChild(a);li.appendChild(b);ul.appendChild(li)});
+    $('tY').textContent=y;$('tN').textContent=n;
+    if(!rows.length){var p=document.createElement('p');p.className='empty';p.textContent='Be the first to confirm.';ul.appendChild(p)}
+    $('board').hidden=false;
+  }
+
+  if(window.claude&&claude.use){
+    Promise.all([claude.use('db'),claude.use('user')]).then(function(r){
+      db=r[0];var u=r[1];if(!db)return;
+      owner=!!(u&&u.isOwner&&u.isOwner());
+      return (u&&u.id?u.id():Promise.resolve(null)).then(function(id){
+        uid=id;col=db.collection('rsvps');
+        col.onSnapshot(render,function(){});
+      });
+    }).catch(function(){});
+  }
+
+  $('send').addEventListener('click',function(){
+    var name=$('name').value.trim(),st=status(),g=st==='yes'?parseInt($('guests').value,10):0;
+    if(!name){say('Please enter your name.');$('name').focus();return}
+    var line=st==='yes'?'I will attend Lola Marvie’s 82nd birthday on Dec 6, 5:00 PM ('+g+' guest'+(g>1?'s':'')+').':'I’m sorry, I won’t be able to attend Lola Marvie’s 82nd birthday.';
+    var text='From '+name+': '+line;
+    if(db&&uid){
+      $('send').disabled=true;
+      db.collection('rsvps').doc(uid).set({name:name,status:st,guests:g,at:Date.now()}).then(function(){
+        say(st==='yes'?'Thank you, '+name+'! Your seat is reserved.':'Thank you for letting us know, '+name+'.');
+        $('send').disabled=false;
+      }).catch(function(){$('send').disabled=false;fallback(text)});
+    }else fallback(text);
+  });
+  function fallback(text){
+    var done=function(){say('Reply copied. Please send it to the host by message.')};
+    if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(text).then(done,function(){say(text)})}
+    else say(text);
+  }
+})();
+</script>
+</body>
+</html>
